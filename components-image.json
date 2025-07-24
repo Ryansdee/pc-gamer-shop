@@ -1,0 +1,31 @@
+{
+  "amd-ryzen-5-7600x":{
+    "name": "AMD Ryzen 5 7600X",
+    "imageUrl": "https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-5-7600x.jpg"
+  },
+  "amd-ryzen-5-8400f":{
+    "name": "AMD Ryzen 5 8400F",
+    "imageUrl": "https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2608523-amd-ryzen-8000-series-processor-product.jpg"
+  },
+  "rtx-5060-ti-16gb":{
+    "name": "RTX 5060 Ti 16GB",
+    "imageUrl": "https://fr.alternate.be/p/600x600/0/1/ASUS_DUAL_GeForce_RTX_5060_Ti_OC_16G__Carte_graphique@@100124310.jpg"
+  },
+  "32gb-ddr5-5600":{
+    "name": "32GB DDR5 5600MHz",
+    "imageUrl": "https://azerty.nl/media/catalog/product/X/F/XFSVol.f0045e6b295aa3ccd6e8b522656d8814-0861088d_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+  },
+  "b650-ax-eagle":
+  {
+    "name": "Gigabyte B650 AX Eagle",
+    "imagesUrl": "https://fr.alternate.be/p/600x600/0/5/GIGABYTE_B650_EAGLE_AX_carte_m_re_socket_AM5@@100038250.jpg"
+  },
+  "850w-msi":{
+    "name": "MSI MAG 850W",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLoI9NBqI5hcMZsyquRNxlnsVGlTOUyMHuzw&s"
+  },
+  "1Tb-ssd-nvme":{
+    "name": "Lexar 1TB SSD NVMe",
+    "imageUrl": "https://m.media-amazon.com/images/I/617O6QE6K2L._AC_SX522_.jpg"
+  }
+}
