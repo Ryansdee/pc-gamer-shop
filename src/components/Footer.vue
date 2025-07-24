@@ -341,7 +341,6 @@ const subscribeNewsletter = () => {
   
   .space-x-6 {
     flex-direction: column;
-    space-x: 0;
     gap: 1rem;
   }
 }
