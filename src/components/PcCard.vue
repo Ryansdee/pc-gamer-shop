@@ -96,7 +96,7 @@
         <!-- Indicateur de prix -->
         <div class="flex flex-col items-end">
           <span class="text-xs text-gray-400">à partir de</span>
-          <span class="text-xs text-blue-400 font-medium">{{ pc.price }}€ ou {{ Math.round(pc.price/12) }}€/mois</span>
+          <span class="text-xs text-blue-400 font-medium">{{ pc.price }}€ TTC</span>
         </div>
       </div>
 

@@ -33,12 +33,15 @@
       >
         <!-- Image + stock -->
         <div class="flex flex-col items-center">
-          <img
-            :src="pc.image"
-            :alt="`Image du PC ${pc.name}`"
-            class="rounded-xl w-80 h-80 object-cover shadow-lg transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-          />
+          <div class="flex flex-wrap justify-center gap-4 mb-6">
+            <img
+              v-for="(img, index) in images"
+              :key="index"
+              :src="img"
+              :alt="`Image ${index + 1} de ${pc.name}`"
+              class="w-40 h-40 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+            />
+          </div>
           <span
             class="mt-4 px-4 py-1 rounded-full text-sm font-medium"
             :class="{
@@ -128,6 +131,7 @@ const route = useRoute();
 const pc = ref(null);
 const loading = ref(true);
 const componentImages = ref({});
+const images = ref([])
 
 // Map des composants
 const components = {
@@ -142,14 +146,25 @@ const components = {
 };
 
 // Récupération du produit
+function extractImagesFromDoc(docData) {
+  return Object.entries(docData)
+    .filter(([key]) => key.startsWith('image'))
+    .sort(([a], [b]) => a.localeCompare(b)) // tri : image1, image2...
+    .map(([, value]) => value)
+}
+
 async function fetchPC() {
   loading.value = true;
   const docRef = doc(db, 'pc', route.params.id);
   const docSnap = await getDoc(docRef);
-  pc.value = docSnap.exists() ? docSnap.data() : null;
+  if (docSnap.exists()) {
+    pc.value = docSnap.data();
+    images.value = extractImagesFromDoc(pc.value);
+  } else {
+    pc.value = null;
+  }
   loading.value = false;
 }
-
 // Récupération des images composants
 async function fetchComponentImages() {
   const snapshot = await getDocs(collection(db, 'components-image'));

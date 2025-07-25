@@ -318,13 +318,14 @@ async function fetchPCs() {
   try {
     loading.value = true;
     const querySnapshot = await getDocs(collection(db, "pc"));
-    pcs.value = querySnapshot.docs.map(doc => ({ 
-      id: doc.id, 
-      ...doc.data(),
-      // Ajout de propriétés par défaut si manquantes
-      inStock: doc.data().inStock ?? true,
-      performanceScore: doc.data().performanceScore ?? Math.floor(Math.random() * 5) + 1
-    }));
+    pcs.value = querySnapshot.docs
+      .map(doc => ({
+        id: doc.id,
+        ...doc.data(),
+        inStock: doc.data().inStock ?? true,
+        performanceScore: doc.data().performanceScore ?? Math.floor(Math.random() * 5) + 1
+      }))
+      .sort((a, b) => a.price - b.price); // Tri par prix croissant
     console.log("PCs récupérés :", pcs.value);
   } catch (error) {
     console.error("Erreur lors du chargement des PC:", error);
@@ -332,6 +333,7 @@ async function fetchPCs() {
     loading.value = false;
   }
 }
+
 
 const clearAllFilters = () => {
   searchQuery.value = '';
