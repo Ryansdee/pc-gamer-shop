@@ -199,7 +199,7 @@ async function addToCart() {
   try {
     // Met ici l'URL de TON serveur Node.js (par exemple http://localhost:4242 si local,
     // ou https://monserveur.com si déployé)
-    const response = await fetch("https://lf-backend-pi.vercel.app//api/create-checkout-session", {
+    const response = await fetch("https://lf-backend-pi.vercel.app/api/create-checkout-session", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
