@@ -125,7 +125,8 @@
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { db } from '../firebase';
-import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
+import { doc, getDoc, collection, getDocs, getAuth } from 'firebase/firestore';
+import { getAuth } from "firebase/auth";
 
 const route = useRoute();
 const pc = ref(null);
