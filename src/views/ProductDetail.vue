@@ -197,7 +197,9 @@ async function addToCart() {
   }
 
   try {
-    const response = await fetch("https://lfbackend.netlify.app/.netlify/functions/create-checkout-session", {
+    // Met ici l'URL de TON serveur Node.js (par exemple http://localhost:4242 si local,
+    // ou https://monserveur.com si déployé)
+    const response = await fetch("https://lfbackend.netlify.app/create-checkout-session", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -220,6 +222,7 @@ async function addToCart() {
     alert("Erreur serveur.");
   }
 }
+
 
 
 onMounted(async () => {
