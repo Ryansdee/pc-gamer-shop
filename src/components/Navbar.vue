@@ -4,10 +4,8 @@
       <div class="flex justify-between items-center h-16 lg:h-20">
         <!-- Logo et marque -->
         <div class="flex items-center space-x-3">
-          <div class="w-8 h-8 lg:w-10 lg:h-10 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg flex items-center justify-center">
-            <svg class="w-5 h-5 lg:w-6 lg:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-            </svg>
+          <div class="w-20 bg-transparent from-blue-400 to-purple-600 rounded-lg flex items-center justify-center">
+            <img src="../../LIQUIDFLOW.png" alt="">
           </div>
           <div class="flex flex-col">
             <h1 class="text-lg lg:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">

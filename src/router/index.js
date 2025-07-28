@@ -3,6 +3,8 @@ import Home from '../views/HomeView.vue'
 import ProductDetail from '../views/ProductDetail.vue'
 import Profile from '../views/ProfileView.vue'
 import {auth} from '../firebase' // Assurez-vous que le chemin est correct
+import Success from '../views/Success.vue';
+import Cancel from '../views/Cancel.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -35,7 +37,14 @@ const routes = [
   path: '/profile/settings',
   name: 'ProfileSettings',
   component: () => import('../views/Settings.vue'),
-}
+},
+{
+  path: '/about',
+  name: 'About',
+  component: () => import('../views/AboutView.vue'),
+},
+  { path: '/success', component: Success },
+  { path: '/cancel', component: Cancel },
 ]
 
 const router = createRouter({

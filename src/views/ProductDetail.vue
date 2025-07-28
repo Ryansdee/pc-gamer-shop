@@ -181,12 +181,45 @@ function getImageFor(componentName) {
   return componentImages.value[componentName.toLowerCase()] || '';
 }
 
-function addToCart() {
-  if (pc.value && pc.value.inStock > 0) {
-    console.log('Ajouté au panier :', pc.value);
-    alert(`🛒 ${pc.value.name} a été ajouté au panier !`);
+async function addToCart() {
+  const auth = getAuth();
+  const user = auth.currentUser;
+
+  if (!user) {
+    alert("Veuillez vous connecter pour continuer.");
+    return;
+  }
+
+  if (!pc.value || !pc.value.stripePriceId) {
+    alert("Données Stripe manquantes pour ce produit.");
+    return;
+  }
+
+  try {
+    const response = await fetch("https://lfbackend.netlify.app/.netlify/functions/create-checkout-session", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        priceId: pc.value.stripePriceId,
+        uid: user.uid
+      })
+    });
+
+    const data = await response.json();
+
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      alert("Une erreur est survenue lors de la redirection.");
+    }
+  } catch (error) {
+    console.error("Erreur lors de la requête Stripe:", error);
+    alert("Erreur serveur.");
   }
 }
+
 
 onMounted(async () => {
   await fetchComponentImages();

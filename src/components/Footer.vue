@@ -7,11 +7,9 @@
         <!-- Brand Section -->
         <div class="space-y-6">
           <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-              </svg>
-            </div>
+          <div class="w-20 bg-transparent from-blue-400 to-purple-600 rounded-lg flex items-center justify-center">
+            <img src="../../LIQUIDFLOW.png" alt="">
+          </div>
             <div>
               <h3 class="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Liquid Flow
@@ -28,27 +26,10 @@
           <!-- Social Media -->
           <div class="flex space-x-4">
             <a 
-              href="#" 
-              class="w-10 h-10 bg-gray-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25"
-              aria-label="Facebook"
-            >
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-            </a>
-            <a 
-              href="#" 
-              class="w-10 h-10 bg-gray-700 hover:bg-blue-400 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-400/25"
-              aria-label="Twitter"
-            >
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-              </svg>
-            </a>
-            <a 
-            href="#" 
+            href="https://www.twitch.tv/ryansdee" 
             class="w-10 h-10 bg-gray-700 hover:bg-purple-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/25"
             aria-label="twitch"
+            target="_blank" rel="noopener noreferrer"
             >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.201 2L2 6.235v14.353h6.353V22l3.523-3.523h4.352L22 8.941V2H4.201zm15.06 6.883l-3.883 3.882h-4.71l-2.824 2.825v-2.825H3.529V3.412h15.732v5.47z"/>
@@ -57,9 +38,10 @@
             </a>
 
             <a 
-              href="#" 
+              href="https://www.youtube.com/@ryansdee" 
               class="w-10 h-10 bg-gray-700 hover:bg-red-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-red-500/25"
               aria-label="YouTube"
+              target="_blank" rel="noopener noreferrer"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -114,46 +96,13 @@
           <ul class="space-y-3">
             <li>
               <a 
-                href="#" 
-                class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2 group"
-              >
-                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span>Centre d'aide</span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#" 
+                href="mailto:ryan.deschuyteneer@gmail.com" 
                 class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2 group"
               >
                 <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
                 </svg>
                 <span>Nous contacter</span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#" 
-                class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2 group"
-              >
-                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span>Garantie & SAV</span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#" 
-                class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2 group"
-              >
-                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span>Guide d'achat</span>
               </a>
             </li>
           </ul>
@@ -171,8 +120,8 @@
                 </svg>
               </div>
               <div>
-                <p class="text-gray-300 text-sm">123 Avenue Gaming</p>
-                <p class="text-gray-300 text-sm">75001 Paris, France</p>
+                <p class="text-gray-300 text-sm">Bruxelles</p>
+                <p class="text-gray-300 text-sm">Belgique</p>
               </div>
             </div>
             
@@ -183,7 +132,7 @@
                 </svg>
               </div>
               <div>
-                <p class="text-gray-300 text-sm">+33 1 23 45 67 89</p>
+                <p class="text-gray-300 text-sm"><a href="tel:+32498196523">0498.19.65.23</a></p>
                 <p class="text-xs text-gray-400">Lun-Ven: 9h-18h</p>
               </div>
             </div>
@@ -195,32 +144,10 @@
                 </svg>
               </div>
               <div>
-                <p class="text-gray-300 text-sm">contact@liquidflow.fr</p>
+                <p class="text-gray-300 text-sm"><a href="mailto:ryan.deschuyteneer@gmail.com">ryan.deschuyteneer@gmail.com</a></p>
                 <p class="text-xs text-gray-400">Réponse sous 24h</p>
               </div>
             </div>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="pt-4 border-t border-gray-700">
-            <h5 class="text-sm font-medium text-white mb-3">Newsletter Gaming</h5>
-            <div class="flex space-x-2">
-              <input
-                v-model="email"
-                type="email"
-                placeholder="votre@email.fr"
-                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-              />
-              <button
-                @click="subscribeNewsletter"
-                class="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 active:scale-95 text-sm font-medium"
-              >
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
-                </svg>
-              </button>
-            </div>
-            <p class="text-xs text-gray-400 mt-2">Offres exclusives et nouveautés gaming</p>
           </div>
         </div>
       </div>
@@ -244,17 +171,17 @@
 
           <!-- Legal Links -->
           <div class="flex flex-wrap justify-center md:justify-end items-center space-x-6 text-sm">
-            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-              Mentions légales
+            <a href="/" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+              Accueil
             </a>
-            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-              Confidentialité
+            <a href="/cart" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+              Panier
             </a>
-            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-              CGV
+            <a href="/about" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+              A propos
             </a>
-            <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-              Cookies
+            <a href="mailto:ryan.deschuyteneer@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+              Contact
             </a>
           </div>
         </div>
