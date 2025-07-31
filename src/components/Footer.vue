@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-black border-t border-gray-700">
+  <footer class="bg-white border-t border-gray-200 text-gray-700">
     <!-- Main Footer Content -->
     <div class="container mx-auto px-6 py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -11,14 +11,14 @@
             <img src="../../LIQUIDFLOW.png" alt="">
           </div>
             <div>
-              <h3 class="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <h3 class="text-xl font-bold text-gray-900">
                 Liquid Flow
               </h3>
-              <span class="text-xs text-gray-400">PC Gaming Excellence</span>
+              <span class="text-xs text-gray-500">PC Gaming Excellence</span>
             </div>
           </div>
           
-          <p class="text-gray-300 text-sm leading-relaxed">
+          <p class="text-gray-600 text-sm leading-relaxed">
             Votre partenaire de confiance pour les PC gaming haute performance. 
             Configurations sur-mesure, composants premium et service client expert.
           </p>
@@ -27,7 +27,7 @@
           <div class="flex space-x-4">
             <a 
             href="https://www.twitch.tv/ryansdee" 
-            class="w-10 h-10 bg-gray-700 hover:bg-purple-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/25"
+            class="w-10 h-10 bg-white hover:bg-purple-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/25"
             aria-label="twitch"
             target="_blank" rel="noopener noreferrer"
             >
@@ -39,7 +39,7 @@
 
             <a 
               href="https://www.youtube.com/@ryansdee" 
-              class="w-10 h-10 bg-gray-700 hover:bg-red-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-red-500/25"
+              class="w-10 h-10 bg-white hover:bg-red-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-red-500/25"
               aria-label="YouTube"
               target="_blank" rel="noopener noreferrer"
             >
@@ -52,12 +52,12 @@
 
         <!-- Quick Links -->
         <div class="space-y-6">
-          <h4 class="text-lg font-semibold text-white">Navigation</h4>
-          <ul class="space-y-3">
+          <h4 class="text-lg font-semibold text-black">Navigation</h4>
+          <ul class="space-y-3 text-blue-400">
             <li>
               <router-link 
                 to="/" 
-                class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2 group"
+                class="hover:text-blue-600 transition-colors duration-200 flex items-center space-x-2 group"
               >
                 <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
@@ -68,7 +68,7 @@
             <li>
               <router-link 
                 to="/cart" 
-                class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2 group"
+                class="hover:text-blue-600 transition-colors duration-200 flex items-center space-x-2 group"
               >
                 <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
@@ -79,7 +79,7 @@
             <li>
               <router-link 
                 to="/about" 
-                class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2 group"
+                class="hover:text-blue-600 transition-colors duration-200 flex items-center space-x-2 group"
               >
                 <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
@@ -92,12 +92,12 @@
 
         <!-- Support -->
         <div class="space-y-6">
-          <h4 class="text-lg font-semibold text-white">Support</h4>
-          <ul class="space-y-3">
+          <h4 class="text-lg font-semibold text-black">Support</h4>
+          <ul class="space-y-3 text-blue-400">
             <li>
               <a 
                 href="mailto:ryan.deschuyteneer@gmail.com" 
-                class="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center space-x-2 group"
+                class="hover:text-blue-600 transition-colors duration-200 flex items-center space-x-2 group"
               >
                 <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
@@ -110,7 +110,7 @@
 
         <!-- Contact Info -->
         <div class="space-y-6">
-          <h4 class="text-lg font-semibold text-white">Contact</h4>
+          <h4 class="text-lg font-semibold text-black">Contact</h4>
           <div class="space-y-4">
             <div class="flex items-start space-x-3">
               <div class="w-8 h-8 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -120,8 +120,8 @@
                 </svg>
               </div>
               <div>
-                <p class="text-gray-300 text-sm">Bruxelles</p>
-                <p class="text-gray-300 text-sm">Belgique</p>
+                <p class="text-blue-400 text-sm">Bruxelles</p>
+                <p class="text-blue-400 text-sm">Belgique</p>
               </div>
             </div>
             
@@ -132,8 +132,8 @@
                 </svg>
               </div>
               <div>
-                <p class="text-gray-300 text-sm"><a href="tel:+32498196523">0498.19.65.23</a></p>
-                <p class="text-xs text-gray-400">Lun-Ven: 9h-18h</p>
+                <p class="text-blue-500 text-sm"><a href="tel:+32498196523">0498.19.65.23</a></p>
+                <p class="text-xs text-blue-400">Lun-Ven: 9h-18h</p>
               </div>
             </div>
             
@@ -144,8 +144,8 @@
                 </svg>
               </div>
               <div>
-                <p class="text-gray-300 text-sm"><a href="mailto:ryan.deschuyteneer@gmail.com">ryan.deschuyteneer@gmail.com</a></p>
-                <p class="text-xs text-gray-400">Réponse sous 24h</p>
+                <p class="text-blue-500 text-sm"><a href="mailto:ryan.deschuyteneer@gmail.com">ryan.deschuyteneer@gmail.com</a></p>
+                <p class="text-xs text-blue-400">Réponse sous 24h</p>
               </div>
             </div>
           </div>
@@ -154,12 +154,12 @@
     </div>
 
     <!-- Bottom Bar -->
-    <div class="border-t border-gray-700 bg-gray-900/50">
+    <div class="border-t border-blue-700 bg-blue-700 text-white">
       <div class="container mx-auto px-6 py-6">
         <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <!-- Copyright -->
-          <div class="flex items-center space-x-4 text-sm text-gray-400">
-            <p>&copy; 2025 <span class="text-blue-400 font-medium">Liquid Flow</span> — Tous droits réservés</p>
+          <div class="flex items-center space-x-4 text-sm">
+            <p>&copy; 2025 <span class="text-white font-medium">Liquid Flow</span> — Tous droits réservés</p>
             <div class="hidden md:flex items-center space-x-1">
               <span>Conçu avec</span>
               <svg class="w-4 h-4 text-red-500 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
